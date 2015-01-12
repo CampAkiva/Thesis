@@ -1,0 +1,5 @@
+<% @documents.each do |document| %>
+	<p><%= link_to document.title, room_document_path(document.room.id, document.id) %></p>
+<% end %>
+
+<p><%= link_to "Create New Document", new_room_document_path%></p>

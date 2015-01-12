@@ -1,0 +1,4 @@
+<h1><%=@document.title%></h1>
+  <%= link_to('View', @document.avatar.url(:original)) %>
+
+ <p><%= link_to "Edit This Document", edit_room_document_path %></p>
